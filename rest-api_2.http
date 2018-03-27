@@ -1,0 +1,28 @@
+POST http://localhost:8080/accounts/
+Accept: */*
+Cache-Control: no-cache
+
+{
+  "amount": "2000",
+  "currency": "EUR"
+}
+
+###
+POST http://localhost:8080/accounts/
+Accept: */*
+Cache-Control: no-cache
+
+{
+  "amount": "3000",
+  "currency": "USD"
+}
+
+<> 2018-03-27T103957.200.json
+<> 2018-03-27T103910.200.json
+<> 2018-03-27T103731.200.json
+<> 2018-03-27T103433.200.json
+<> 2018-03-27T103100.200.json
+<> 2018-03-27T103004.200.json
+
+###
+

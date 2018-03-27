@@ -14,10 +14,11 @@ public class AccountController {
         this.reactiveAccountRepository = reactiveAccountRepository;
     }
 
-    @GetMapping(value = "/search/bycurrency")
-    Flux<Account> findByCurrency(@RequestParam String currency) {
+    @GetMapping(value = "/currency/{currency}")
+    Flux<Account> findByCurrency(@PathVariable String currency) {
         return reactiveAccountRepository.findByCurrency(Currency.fromValue(currency));
     }
+
 
     @GetMapping(value = "/{id}")
     Mono<Account> findById(@PathVariable String id) {
